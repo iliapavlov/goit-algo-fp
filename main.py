@@ -2,6 +2,8 @@ from task1_linked_list import demo_linked_list
 from task2_fractal_tree import draw_fractal_tree
 from task3_dejkstra import demo_dejkstra
 from task4_visualize_heap import demo_heap_visualization
+from task5_visualize_search import demo_traversal_visualization
+
 # ...
 
 def main():
@@ -10,6 +12,7 @@ def main():
     print("2 - Фрактальне дерево")
     print("3 - Алгоритм Дейкстри")
     print("4 - Візуалізація бінарної купи")
+    print("5 - Візуалізація пошуку в бінарному дереві (DFS та BFS)")
     # ...
     choice = input("Ваш вибір: ")
 
@@ -22,6 +25,8 @@ def main():
             demo_dejkstra()
         case "4":
             demo_heap_visualization()
+        case "5":
+            demo_traversal_visualization()
         case _:
             print("Некоректний вибір. Завершення програми.")
 
