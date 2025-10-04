@@ -113,12 +113,12 @@ def demo_traversal_visualization():
     heapq.heapify(heap_list)
     heap_root = build_heap_tree(heap_list)
 
-    print("🔍 DFS Visualization")
+    print("> DFS Visualization")
     plt.figure(figsize=(8, 5))
     visualize_dfs(heap_root)
 
     heap_root = build_heap_tree(heap_list)
-    print("🌐 BFS Visualization")
+    print("> BFS Visualization")
     plt.figure(figsize=(8, 5))
     visualize_bfs(heap_root)
 

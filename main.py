@@ -3,6 +3,7 @@ from task2_fractal_tree import draw_fractal_tree
 from task3_dejkstra import demo_dejkstra
 from task4_visualize_heap import demo_heap_visualization
 from task5_visualize_search import demo_traversal_visualization
+from task6_maximize_calories import demo_meal_budget
 
 # ...
 
@@ -13,6 +14,7 @@ def main():
     print("3 - Алгоритм Дейкстри")
     print("4 - Візуалізація бінарної купи")
     print("5 - Візуалізація пошуку в бінарному дереві (DFS та BFS)")
+    print("6 - Максимізація калорій при обмеженому бюджеті")
     # ...
     choice = input("Ваш вибір: ")
 
@@ -27,6 +29,8 @@ def main():
             demo_heap_visualization()
         case "5":
             demo_traversal_visualization()
+        case "6":
+            demo_meal_budget()
         case _:
             print("Некоректний вибір. Завершення програми.")
 
